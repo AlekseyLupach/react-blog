@@ -5,6 +5,10 @@
     flex-direction: column;
 }
 
+.singlePost {
+    width: 80vw;
+}
+
 .postImg {
     width        : 385px;
     height       : 280px;

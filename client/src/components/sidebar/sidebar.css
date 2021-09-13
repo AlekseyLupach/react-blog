@@ -1,70 +1,36 @@
 .sidebar {
-    flex            : 3;
-    height          : fit-content;
-    margin          : 20px;
-    padding-bottom  : 30px;
-    background-color: #fdfbfb;
-    border-radius   : 10px;
-    display         : flex;
-    flex-direction  : column;
-    align-items     : center;
-}
-
-.sidebarItem {
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-}
-
-.sidebarItem p {
-    min-height: 220px;
-}
-
-.sidebarTitle {
-    margin       : 10px;
-    padding      : 5px;
-    width        : 80%;
-    border-top   : solid 1px #a7a4a4;
-    border-bottom: solid 1px #a7a4a4;
-    text-align   : center;
-    font-family  : "Varela Round", sans-serif;
-    font-size    : 12px;
-    line-height  : 19px;
-    color        : #222222;
-    font-weight  : 600;
-}
-
-.sidebarItem>img {
-    margin-top: 15px;
-    width     : 250px;
-    height    : 250px;
-}
-
-.sidebarItem>p {
-    padding: 30px;
+    width     : 100%;
+    margin-top: 20px;
 }
 
 .sidebarList {
-    list-style-type: none;
-    margin-bottom  : 30px;
+    display: flex;
+    width  : 100%;
+}
+
+.sidebarList a {
+    text-decoration: none;
 }
 
 .sidebarListItem {
-    display   : inline-block;
-    width     : 50%;
-    margin-top: 15px;
-    cursor    : pointer;
+    text-transform     : uppercase;
+    color              : #111111;
+    padding            : 5px 15px;
+    margin-right       : 20px;
+    list-style-type    : none;
+    font-size          : 14px;
+    font-family        : 'Inter', Arial, sans-serif;
+    line-height        : 1.55;
+    font-weight        : 400;
+    border-width       : 1px;
+    border-radius      : 30px;
+    background-position: center center;
+    border-color       : #cfcfcf;
+    border-style       : solid;
+    transition         : background-color 0s ease-in-out, color 0s ease-in-out, border-color 0s ease-in-out;
 }
 
-.sidebarSocial {
-    margin-top     : 15px;
-    width          : 250px;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-}
-
-.sidebarIcon {
-    font-size  : 16px;
-    margin-left: 10px;
+.active {
+    border-color: #707070;
+    color       : #111111;
 }

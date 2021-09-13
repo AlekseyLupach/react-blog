@@ -1,71 +1,76 @@
-.write {
-    padding-top: 50px;
-}
-
-.writeImg {
-    margin-left  : 150px;
-    width        : 70vw;
-    height       : 450px;
-    border-radius: 10px;
+.writeFormContainer {
+    display        : flex;
+    flex-direction : column;
+    align-items    : flex-end;
 }
 
 .writeForm {
-    position: relative;
+    width         : 100%;
+    display       : flex;
+    flex-direction: row;
+    width         : 100%
+}
+
+.write {
+    margin-top: 60px !important;
 }
 
 .writeFormGroup {
-    margin-left: 150px;
-    display    : flex;
-    align-items: center;
+    width: 50%;
 }
 
-.writeIcon {
-    width          : 25px;
-    height         : 25px;
-    font-size      : 20px;
-    border         : 1px solid;
-    border-radius  : 50%;
-    color          : rgb(129, 125, 125);
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    cursor         : pointer;
+.writeFormGroupItem {
+    display       : flex;
+    flex-direction: column;
+    max-width     : 200px;
+    margin-bottom : 30px;
 }
 
-.writeInput {
-    font-size: 30px;
-    border   : none;
-    padding  : 20px;
-    width    : 70vw;
+.writeFormGroupItemTitle {
+    font-size    : 22px;
+    font-weight  : 600;
+    color        : gray;
+    margin-bottom: 15px;
 }
 
-.writeInput::placeholder {
-    color      : rgb(189, 185, 185);
-    font-weight: 400;
+.writeFormGroupItem input,
+textarea {
+    width       : 100%;
+    width       : 300px;
+    height      : 40px;
+    margin      : 0px;
+    border-width: 0px;
+    border      : 1px solid gray;
+    font-size   : 16px;
 }
 
-.writeInput:focus {
-    outline-style: none;
+.fileInput {
+    border: none !important;
 }
 
-.writeText {
-    width      : 70vw;
-    height     : 100vh;
-    font-family: inherit;
-    font-size  : 20px;
+.writeFormGroupItem select {
+    width    : 306px;
+    height   : 44px;
+    font-size: 16px;
+}
+
+.writeImg {
+    max-width : 306px;
+    object-fit: cover;
 }
 
 .writeSubmit {
-    position        : absolute;
-    top             : 20px;
-    right           : 50px;
-    color           : white;
-    background-color: teal;
-    padding         : 10px;
+    min-width       : 106px;
+    height          : 36px;
     border          : none;
-    border-radius   : 10px;
-    font-size       : 16px;
+    background-color: green;
+    color           : aliceblue;
+    border-radius   : 15px;
     cursor          : pointer;
-    display         : flex;
-    align-items     : center;
+}
+
+.container {
+    max-width: 1440px;
+    padding  : 0 15px;
+    margin   : 0 auto;
 }

@@ -99,3 +99,9 @@
 .settingsSubmitButton:hover {
     background-color: rgb(1, 114, 114);
 }
+
+.settingsUpdated {
+    color     : green;
+    text-align: center;
+    margin-top: 20px;
+}
