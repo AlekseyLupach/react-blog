@@ -71,7 +71,7 @@ router.get("/:id", async (req, res) => {
 router.get("/", async (req, res) => {
   const username = req.query.user;
   const catName = req.query.cat;
-  try {
+  try { 
     let posts;
     if (username) {
       posts = await Post.find({ username });
